@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MiTunes</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- Left hand column -->
+	<div class="column">
+		<h1>Albums</h1>
+		<select size="20" id="albums"></select>
+	</div><!-- Central column -->
+	<div class="column">
+		<h1 id="artist"></h1>
+		<h2 id="album"></h2>
+		<select size="20" id="trackList"></select>
+	</div>
+	<div class="column">
+		<img id="current-image"/>
+		<div id="current-artist"></div>
+		<div id="current-album"></div>
+
+		<h2>track:</h2>
+
+		Song Thrush
+
+		<audio controls="controls">
+			<source src="MiTunes/Audio/BBC/Birdsong Finches/Birdsong-Bullfinch.mp3"></source>
+		</audio>
+		<div id="current-lyrics"></div>
+	</div>
+	<div id="footer"><!--Search Functions -->
+		<div id="dose-letters">
+			<span>a</span>
+			<span>b</span>
+			<span>c</span>
+			<span>d</span>
+			<span>e</span>
+			<span>f</span>
+			<span>g</span>
+			<span>h</span>
+			<span>i</span>
+			<span>j</span>
+			<span>k</span>
+			<span>l</span>
+			<span>m</span>
+			<span>n</span>
+			<span>o</span>
+			<span>p</span>
+			<span>q</span>
+			<span>r</span>
+			<span>s</span>
+			<span>t</span>
+			<span>u</span>
+			<span>v</span>
+			<span>w</span>
+			<span>x</span>
+			<span>y</span>
+			<span>z</span>
+		</div>
+		<div id="dose-controlles-doe">
+			<span><input type="text" id="searchbox"/></span>
+			<span id="backspace">Backspace</span>
+			<span id="reset">Reset</span>
+		</div>
+	</div>
+</div>
+<div id="modalContainer">
+	<div id="searchResults">
+		<ul id="results">
+			<li>
+				<div class="li-heading">Album1</div>
+				<ul>
+					<li>
+						<div class="li-heading">Track 1</div>
+						<ul>
+							<li><div class="li-heading search-lyrics">I am som elyricsw sadsdhalkl</div></li>
+							<li><div class="li-heading search-lyrics">I am som elyricsw sadsdhalks</div></li>
+							<li><div class="li-heading search-lyrics">I am som elyricsw sadsdh</div></li>
+							<li><div class="li-heading search-lyrics">I am som elyricsw sadsdhalksjhdfl</div></li>
+						</ul>
+					</li>
+					<li><div class="li-heading">Track 1</div>
+						<ul>
+							<li><div class="li-heading search-lyrics">I am som elyricsw sadsdhalkl</div></li>
+							<li><div class="li-heading search-lyrics">I am som <span class="found-text">elyricsw</span> sadsdhalks</div></li>
+							<li><div class="li-heading search-lyrics">I am som elyricsw sadsdh</div></li>
+							<li><div class="li-heading search-lyrics">I am som elyricsw sadsdhalksjhdfl</div></li>
+						</ul></li>
+					<li><div class="li-heading">Track 1</div>
+						<ul>
+							<li><div class="li-heading search-lyrics">I am som elyricsw sadsdhalkl</div></li>
+							<li><div class="li-heading search-lyrics">I am som elyricsw sadsdhalks</div></li>
+							<li><div class="li-heading search-lyrics">I am som elyricsw sadsdh</div></li>
+							<li><div class="li-heading search-lyrics">I am som elyricsw sadsdhalksjhdfl</div></li>
+						</ul></li>
+				</ul>
+			</li>
+			<li>
+				<div class="li-heading">Album2</div>
+				<ul>
+					<li><div class="li-heading">Track 1</div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<script src="MiTunes/music.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
